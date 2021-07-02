@@ -6,6 +6,7 @@ all algorithms return a list of movieids
 import pandas as pd
 import numpy as np
 import os
+from sklearn.decomposition import NMF
 from movierecommenderpackage.utils import movies, ratings, ratings_long
 from movierecommenderpackage.utils import replace_titles_with_ids, create_new_user, create_neighborhood 
 from movierecommenderpackage.utils import create_genre_index_filter, load_model
